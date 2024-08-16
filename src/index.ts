@@ -9,7 +9,7 @@
  */
 
 export interface Env {
-	
+
 }
 
 // when we write to express code then we worry about method & route - app.get("/user") & body, headers, query parameters..
@@ -17,21 +17,9 @@ export interface Env {
 
 export default {
 	async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
-		console.log(request.body);
-		console.log(request.headers);
-		console.log(request.method);
-		
 
-		if(request.method == "GET"){
-			return Response.json({
-				message: "you sent a get request"
-			});
-		} else{
-			return Response.json({
-				message: "you did not send a get request"
-			})
-		}
-		
-		
-	},
-};
+		return Response.json({
+			message: "you did not sent a get request"
+		});
+	}
+}

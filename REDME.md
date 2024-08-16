@@ -96,3 +96,19 @@ export default {
 ```
 * Cloudflare does not expect a routing library/http server out of the box. You can write a full application with just the constructs available above.
 * We will eventually see how you can use other HTTP frameworks (like express) in cloudflare workers.
+
+
+### Deploying a worker
+* Now that you have written a basic HTTP server, let’s get to the most interesting bit — Deploying it on the internet
+* We use wrangler for this (Ref https://developers.cloudflare.com/workers/wrangler/)
+
+#### Step 1 - Login to cloudflare via the wrangler cli
+* npx wrangler login
+
+#### Step 2 - Deploy your worker
+* npm run deploy
+
+
+😊😊 I am able to deploy the app in my case the url is - https://my-app.shubhasheeshkundu02.workers.dev
+
+
