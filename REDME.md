@@ -112,3 +112,7 @@ export default {
 😊😊 I am able to deploy the app in my case the url is - https://my-app.shubhasheeshkundu02.workers.dev
 
 
+### What is hono ?
+* Hono is a small, simple, and ultrafast web framework for Cloudflare Pages and Workers, Deno, and Bun. 
+
+* It is like sort of routing engine, it is not exactly your http server,it is give easier way to writing the code like expressJs
